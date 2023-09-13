@@ -4,7 +4,7 @@ The Skill Level Service, a pivotal component of the "intelligent tutor" system, 
 These distinct cognitive skills, referred to as "skills" within the system, are evaluated independently for each chapter of a course.
 
 The calculated skill level, expressed as a score ranging from 0 to 100, represents a dynamic measure of a student's proficiency and competence. 
-It is not a static assessment but rather a continuously evolving reflection of a student's learning journey within the platform.
+It is not a static assessment but rather a continuously evolving reflection of a student's learning journey within the platform.[SkillLevel Service Scoring System & Bloom's Taxonomy](https://gits-enpro.readthedocs.io/en/latest/dev-manuals/gamification/Scoring%20System.html)
 
 The Skill Level Service adeptly harnesses data from various sources, including solved quizzes, content revisitation, engagement with flashcards, and other platform activities, to precisely compute the skill level of each student. 
 By assimilating this multifaceted data, it generates a comprehensive profile that reflects a student's cognitive growth and aptitude within the course.
