@@ -2,7 +2,7 @@
 
 The Skill Level Service, a pivotal component of the "intelligent tutor" system, plays a central role in comprehensively analyzing and enhancing students' learning experiences. This service leverages the renowned "Bloom's Taxonomy" framework to assess and categorize students' cognitive abilities across various dimensions, including their capacity to remember, understand, apply, and analyze course material. These distinct cognitive skills, referred to as "skills" within the system, are evaluated independently for each chapter of a course.
 
-The calculated skill level, expressed as a score ranging from 0 to 100, represents a dynamic measure of a student's proficiency and competence. It is not a static assessment but rather a continuously evolving reflection of a student's learning journey within the platform.[SkillLevel Service Scoring System and Bloom's Taxonomy](https://gits-enpro.readthedocs.io/en/latest/dev-manuals/gamification/Scoring%20System.html)
+The calculated skill level, expressed as a score ranging from 0 to 10, represents a dynamic measure of a student's proficiency and competence. It is not a static assessment but rather a continuously evolving reflection of a student's learning journey within the platform.[SkillLevel Service Scoring System and Bloom's Taxonomy](https://gits-enpro.readthedocs.io/en/latest/dev-manuals/gamification/Scoring%20System.html)
 
 The Skill Level Service adeptly harnesses data from various sources, including solved quizzes, content revisitation, engagement with flashcards, and other platform activities, to precisely compute the skill level of each student. By assimilating this multifaceted data, it generates a comprehensive profile that reflects a student's cognitive growth and aptitude within the course.
 
