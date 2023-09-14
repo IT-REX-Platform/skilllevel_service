@@ -1,31 +1,37 @@
 # SkillLevel Service
 
-The SkillLevel Service is a vital part of our system that aims to improve students' learning experiences. It assesses and stores the skill levels students achieve through assessments, using a framework called "Bloom's Taxonomy." These skills are measured separately for each chapter of a course.The SkillLevel Service designed to fulfill the following functions within the platform:
+The SkillLevel Service is a vital component in our system, dedicated to enhancing students' learning experiences. It assesses and records students' skill levels using "Bloom's Taxonomy" as a framework. These skills are evaluated separately for each chapter of a course.
 
-1. **Skill Assessment:** This service calculates and records students' skill levels based on their performance in assessments. These skill levels are represented as scores between 0 and 10, showing how well students are doing. Importantly, these scores change as students learn and progress, so they are always up-to-date.
+## Main Functions
 
-2. **Data Collection:** The SkillLevel Service gathers data from various activities like quizzes and flashcards to accurately determine each student's skill level.
+1. **Skill Assessment:** The SkillLevel Service calculates and maintains students' skill levels based on their performance in assessments. These skill levels are represented as scores ranging from 0 to 10, reflecting how well students are performing. Importantly, these scores evolve as students learn and progress, ensuring they remain up-to-date.
+
+2. **Data Collection:** This service collects data from various activities, including quizzes and flashcards, to precisely determine each student's skill level.
 
 ## Purpose
 
-The SkillLevel Service is here to:
+The SkillLevel Service serves the following purposes:
 
-1. **Enhance Learning:** By measuring and storing students' skill levels, we aim to improve the learning experience in our system.
+1. **Enhance Learning:** By measuring and storing students' skill levels, our aim is to enrich the learning experience within our system.
 
-2. **Provide Feedback:** The skill level scores offer students valuable feedback on their progress and areas for improvement.
+2. **Provide Valuable Feedback:** The skill level scores offer students valuable insights into their progress and areas for improvement.
+
+For more details about the SkillLevel Service Scoring System and Bloom's Taxonomy, please refer to the [documentation](https://gits-enpro.readthedocs.io/en/latest/dev-manuals/gamification/Scoring%20System.html).
 
 # Usage
 
-A docker-compose file is provided which creates containers for both the service, a postgres database, and a dapr
-sidecar.
+To deploy the SkillLevel Service, a Docker Compose file is provided, creating containers for the service, a PostgreSQL database, and a Dapr sidecar.
 
-# Dependencies to Other Services
+# Dependencies on Other Services
+
 ## Events
-The events this service publishes/subscribes to are documented on the wiki:
-https://gits-enpro.readthedocs.io/en/latest/dev-manuals/backend/dapr/dapr-topics.html
+
+This service publishes and subscribes to events documented on the [wiki](https://gits-enpro.readthedocs.io/en/latest/dev-manuals/backend/dapr/dapr-topics.html).
 
 ## GraphQL
-This service sends GraphQL queries to the content service to get information about the assessments and users' progress
-with them.
 
-**The ENV variable *CONTENT_SERVICE_URL* needs to be set to the URL of the GraphQL endpoint of the content service**
+The SkillLevel Service sends GraphQL queries to the Content Service to retrieve information about assessments and users' progress with them.
+
+**Note:** Set the ENV variable *CONTENT_SERVICE_URL* to the URL of the GraphQL endpoint of the Content Service.
+
+The SkillLevel Service is designed to streamline skill assessment and provide valuable feedback to students, contributing to an improved learning experience.
